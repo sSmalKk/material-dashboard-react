@@ -26,13 +26,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-// Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
-import ProfilesList from "examples/Lists/ProfilesList";
-import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
+// Material Dashboard 2 React hud components
+import DashboardLayout from "hud/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "hud/Navbars/DashboardNavbar";
+import ProfileInfoCard from "hud/Cards/InfoCards/ProfileInfoCard";
+import ProfilesList from "hud/Lists/ProfilesList";
+import DefaultProjectCard from "hud/Cards/ProjectCards/DefaultProjectCard";
 
 // Overview page components
 import Header from "layouts/profile/components/Header";
@@ -195,7 +194,6 @@ function Overview() {
           </Grid>
         </MDBox>
       </Header>
-      <Footer />
     </DashboardLayout>
   );
 }

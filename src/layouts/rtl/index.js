@@ -21,13 +21,12 @@ import Grid from "@mui/material/Grid";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 
-// Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
-import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
-import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
+// Material Dashboard 2 React hud components
+import DashboardLayout from "hud/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "hud/Navbars/DashboardNavbar";
+import ReportsBarChart from "hud/Charts/BarCharts/ReportsBarChart";
+import ReportsLineChart from "hud/Charts/LineCharts/ReportsLineChart";
+import ComplexStatisticsCard from "hud/Cards/StatisticsCards/ComplexStatisticsCard";
 
 // Data
 import reportsBarChartData from "layouts/rtl/data/reportsBarChartData";
@@ -168,7 +167,6 @@ function RTL() {
           </Grid>
         </MDBox>
       </MDBox>
-      <Footer />
     </DashboardLayout>
   );
 }

@@ -26,10 +26,9 @@ import MDAlert from "components/MDAlert";
 import MDButton from "components/MDButton";
 import MDSnackbar from "components/MDSnackbar";
 
-// Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
+// Material Dashboard 2 React hud components
+import DashboardLayout from "hud/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "hud/Navbars/DashboardNavbar";
 
 function Notifications() {
   const [successSB, setSuccessSB] = useState(false);
@@ -189,7 +188,6 @@ function Notifications() {
           </Grid>
         </Grid>
       </MDBox>
-      <Footer />
     </DashboardLayout>
   );
 }

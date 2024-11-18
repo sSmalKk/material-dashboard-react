@@ -26,10 +26,10 @@ import Icon from "@mui/material/Icon";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 
-// Material Dashboard 2 React example components
-import Sidenav from "examples/Sidenav";
-import Configurator from "examples/Configurator";
-
+// Material Dashboard 2 React hud components
+import Sidenav from "hud/Sidenav";
+import Gamenav from "hud/Gamenav";
+import Configurator from "hud/Configurator";
 // Material Dashboard 2 React themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
@@ -164,6 +164,20 @@ export default function App() {
             {configsButton}
           </>
         )}
+        {layout === "game" && (
+          <>
+            <Gamenav
+              color={sidenavColor}
+              brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
+              brandName="Material Dashboard 2"
+              routes={routes}
+              onMouseEnter={handleOnMouseEnter}
+              onMouseLeave={handleOnMouseLeave}
+            />
+            <Configurator />
+            {configsButton}
+          </>
+        )}
         {layout === "vr" && <Configurator />}
         <Routes>
           {getRoutes(routes)}
@@ -177,6 +191,19 @@ export default function App() {
       {layout === "dashboard" && (
         <>
           <Sidenav
+            color={sidenavColor}
+            brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
+            brandName="Material Dashboard 2"
+            routes={routes}
+            onMouseEnter={handleOnMouseEnter}
+            onMouseLeave={handleOnMouseLeave}
+          />
+          <Configurator />
+          {configsButton}
+        </>
+      )}{layout === "game" && (
+        <>
+          <Gamenav
             color={sidenavColor}
             brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
             brandName="Material Dashboard 2"
